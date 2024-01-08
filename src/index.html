@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" integrity="sha512-ZH3KB6wI5ADHaLaez5ynrzxR6lAswuNfhlXdcdhxsvOUghvf02zU1dAsOC6JrBTWbkE1WNDNs5Dcfz493fDMhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--  Swiper's CSS -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 
     <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
     <link href="../dist/output.css" rel="stylesheet" />
@@ -448,6 +452,91 @@
       </div>
     </section>
     <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
+    <section id="review" class="bg-primaryColorLight py-20">
+      <div class="container">
+        <div class="max-w-md mx-auto text-center">
+          <h2 class="section__title">CUSTOMER REVIEW</h2>
+          <div class="separator mx-auto"></div>
+          <p class="paragraph">
+            Indulge in a symphony of flavors curated for discerning palates, where each dish is a culinary masterpiece waiting to enchant your senses.
+          </p>
+ </div>
+
+ <div class="swiper py-10">
+  <ul class="swiper-wrapper">
+    <li class="swiper-slide">
+      <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam excepturi optio rem natus doloribus ipsum et consequuntur fugit ex at.</p>
+      <div class="flex items-center">
+      <img src="img/review-1.jpg" alt="review image" class="w-12 h-12 rounded-full">
+      <div class="ml-2">
+      <p class="font-oswald uppercase">John Doe</p>
+      <p class="paragraph">Designer</p>
+      </div>
+      <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+    </div>
+    </div>
+    </li>
+    <li class="swiper-slide">
+      <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam excepturi optio rem natus doloribus ipsum et consequuntur fugit ex at.</p>
+      <div class="flex items-center">
+      <img src="img/review-2.jpg" alt="review image" class="w-12 h-12 rounded-full">
+      <div class="ml-2">
+      <p class="font-oswald uppercase">John Doe</p>
+      <p class="paragraph">Designer</p>
+      </div>
+      <i class="fa-solid fa-quote-right text-4xl text-secondaryColor mx-auto"></i>
+    </div>
+    </div>
+    </li>
+    <li class="swiper-slide">
+      <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam excepturi optio rem natus doloribus ipsum et consequuntur fugit ex at.</p>
+      <div class="flex items-center">
+      <img src="img/review-3.jpg" alt="review image" class="w-12 h-12 rounded-full">
+      <div class="ml-2">
+      <p class="font-oswald uppercase">John Doe</p>
+      <p class="paragraph">Designer</p>
+      </div>
+      <i class="fa-solid fa-quote-right text-4xl text-secondaryColor mx-auto"></i>
+    </div>
+    </div>
+    </li>
+    <li class="swiper-slide">
+      <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam excepturi optio rem natus doloribus ipsum et consequuntur fugit ex at.</p>
+      <div class="flex items-center">
+      <img src="img/review-4.jpg" alt="review image" class="w-12 h-12 rounded-full">
+      <div class="ml-2">
+      <p class="font-oswald uppercase">John Doe</p>
+      <p class="paragraph">Designer</p>
+      </div>
+      <i class="fa-solid fa-quote-right text-4xl text-secondaryColor mx-auto"></i>
+    </div>
+    </div>
+    </li>
+    <li class="swiper-slide">
+      <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam excepturi optio rem natus doloribus ipsum et consequuntur fugit ex at.</p>
+      <div class="flex items-center">
+      <img src="img/review-5.jpg" alt="review image" class="w-12 h-12 rounded-full">
+      <div class="ml-2">
+      <p class="font-oswald uppercase">John Doe</p>
+      <p class="paragraph">Designer</p>
+      </div>
+      <i class="fa-solid fa-quote-right text-4xl text-secondaryColor mx-auto"></i>
+    </div>
+    </div>
+    </li>
+    
+  </ul>
+  <div class="swiper-pagination">
+
+  </div>
+ </div>
+      </div>
+    </section>
 
     <!--~~~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~~~-->
 
@@ -466,5 +555,41 @@
   <!--~~~~~~~~~~~~~~~ Main.js ~~~~~~~~~~~~~~~-->
   <script src="main.js"> </script>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    speed: 400,
+  spaceBetween: 30,
+  autoplay:{
+    delay:3000,
+    disableOnInteraction:false
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true
+  },
+  grabCursor:true,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    640: {
+      slidesPerView: 1,
+      
+    },
+    // when window width is >= 640px
+    768: {
+      slidesPerView: 2,
+      
+    },
+    // when window width is >= 768px
+  1024: {
+      slidesPerView: 3,
+      
+    }
+  }
+});
+</script>
   </body>
 </html>
