@@ -70,17 +70,16 @@ tabs.forEach(tab=>{
 const html = document.querySelector('html');
 const themeBtn = document.getElementById("theme-toggle");
 
-if(localStorage.getItem("mode")=="dark"){
+if(localStorage.getItem("mode")==="dark"){
   darkMode();
-}
-else{
+}else{
   lightMode();
 }
-themeBtn.addEventListener('click',(e)=>{
-  if(localStorage.getItem("mood")=="light"){
+themeBtn.addEventListener('click',()=>{
+  // console.log("hello");
+  if(localStorage.getItem("mode")==="light"){
 darkMode();
-  }
-  else{
+  }else{
     lightMode();
   }
 })
