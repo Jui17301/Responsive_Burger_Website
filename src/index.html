@@ -36,7 +36,8 @@
       <div class="hidden absolute top-0 left-0 w-full py-14 bg-primaryColor border-b border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto  dark:bg-darkColor " id="nav-menu">
      <ul class="flex flex-col text-center gap-5 md:flex-row">
       <li>
-        <a href="#home" class=" nav__link hover:text-secondaryColor ease-in duration-200  ">Home</a>
+        <a href="#home" class=" nav__link 
+         text-secondaryColor hover:text-secondaryColor ease-in duration-200  ">Home</a>
       </li>
       <li>
         <a href="#about" class=" nav__link hover:text-secondaryColor ease-in duration-200 ">About</a>
@@ -72,9 +73,9 @@
     <section id="home">
       <div class="container flex flex-col items-center gap-10 md:flex-row ">
         <div class="mx-auto md:basis-1/2 lg:basis-2/5 animate-movingY">
-          <img src="./img/home-image.png" alt="home image" class="w-60 md:w-full">
+          <img src="./img/home-image.png" alt="home image" class="home__image w-60 md:w-full">
         </div>
-        <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
+        <div class="home__content text-center md:basis-1/2 md:text-start lg:basis-3/5">
           <h1 class="home__title">Happy WITH TASTY BURGERS</h1>
           <div class="separator mx-auto md:mx-0"></div>
           <p class="paragraph">Burgers are a classic and beloved dish worldwide, consisting of a seasoned ground meat patty, usually beef, chicken, or plant-based alternatives, served in a bun.Health-conscious consumers can opt for leaner proteins, whole-grain buns, and a variety of fresh vegetables to create a nutritious and satisfying burger.</p>
@@ -104,7 +105,7 @@
     <section id="category">
       <div class="container flex flex-col gap-5 md:flex-row">
         <!-- card 1 -->
-        <div class="bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+        <div class=" category__card bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1">
           <div class="basis-1/3 relative">
             <img src="img/burger-1.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
           </div>
@@ -117,7 +118,7 @@
           </div>
         </div>
         <!-- card 2 -->
-        <div class="bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+        <div class="category__card bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1">
           <div class="basis-1/3 relative">
             <img src="img/snack-1.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
           </div>
@@ -130,7 +131,7 @@
           </div>
         </div>
         <!-- card 3 -->
-        <div class="bg-greenColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+        <div class=" category__card bg-greenColor flex py-3 rounded-lg overflow-hidden md:flex-1">
           <div class="basis-1/3 relative">
             <img src="img/beverage-2.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
           </div>
@@ -149,7 +150,7 @@
     <section id="promo">
       <div class="container flex flex-col gap-5 lg:gap-10 lg:flex-row">
         <!-- card-1 -->
-          <div class="bg-primaryColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-l  dark:bg-darkColorLight">
+          <div class="promo__card-1 bg-primaryColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-l  dark:bg-darkColorLight">
             <img src="img/promo-2.png" alt="promo image" class="w-40 mx-auto hover:animate-movingY md:mx-5 " >
          
           <div class="space-y-2  pt-5 md:pt-0">
@@ -160,7 +161,7 @@
         </div>
       </div>
       <!-- card-2 -->
-      <div class="bg-primaryColorLight flex flex-col p-5 rounded-lg md:items-center lg:flex-row-reverse lg:flex-l  dark:bg-darkColorLight">
+      <div class=" promo__card-2 bg-primaryColorLight flex flex-col p-5 rounded-lg md:items-center lg:flex-row-reverse lg:flex-l  dark:bg-darkColorLight">
         <img src="img/promo-1.png" alt="promo image" class="w-40 mx-auto  hover:animate-movingY md:mx-5" >
      
       <div class="space-y-2 pt-5 md:pt-0">
@@ -177,8 +178,8 @@
     <!--~~~~~~~~~~~~~~~ About ~~~~~~~~~~~~~~~-->
 <section id="about">
   <div class="container flex flex-col gap-10 md:flex-row">
-    <div class="flex-1"><img src="img/about.jpg" alt="about image" class="rounded-lg"></div>
-    <div class="flex-1">
+    <div class="flex-1 about__img"><img src="img/about.jpg" alt="about image" class="rounded-lg"></div>
+    <div class=" about__content flex-1">
       <h2 class="section__title">FIND FOOD AND DRINKS,ALL-IN-ONE PLACE FOR YOUR BEST TASTE</h2>
       <div class="separator"></div>
       <p class="paragraph">Welcome to our culinary haven, where passion meets plate.We craft unforgettable experiences, blending flavors, and creating memories with every exquisite dish. Join us on a journey of gastronomic delight, where hospitality is an art, and each meal is a celebration of culinary mastery and heartfelt service</p>
@@ -219,7 +220,7 @@
 
         </div>
 
-        <div>
+        <div class="menu__items">
           <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 
            lg:gap-12">
            <!-- food -->
@@ -453,7 +454,7 @@
     </section>
     <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
     <section id="review" class="bg-primaryColorLight  py-20">
-      <div class="container">
+      <div class="customer__review container">
         <div class="max-w-md mx-auto text-center">
           <h2 class="section__title">CUSTOMER REVIEW</h2>
           <div class="separator mx-auto"></div>
@@ -641,12 +642,7 @@
     </a>
 
     <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
-  
-  <!--~~~~~~~~~~~~~~~ Scroll Reveal ~~~~~~~~~~~~~~~-->
-
-  <!--~~~~~~~~~~~~~~~ Main.js ~~~~~~~~~~~~~~~-->
-  <script src="main.js"> </script>
-
+    
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
   const swiper = new Swiper('.swiper', {
@@ -683,5 +679,11 @@
   }
 });
 </script>
+  
+  <!--~~~~~~~~~~~~~~~ Scroll Reveal ~~~~~~~~~~~~~~~-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!--~~~~~~~~~~~~~~~ Main.js ~~~~~~~~~~~~~~~-->
+  <script src="main.js"> </script>
+
   </body>
 </html>
